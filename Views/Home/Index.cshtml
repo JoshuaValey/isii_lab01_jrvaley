@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Mobile transient = (Mobile)ViewBag.transient;
+    Mobile scope = (Mobile)ViewBag.scope;
+    Mobile singleton = (Mobile)ViewBag.singleton;
+}
+
+<div class="text-center">
+    <b>transient  </b> @transient.appState
+    <b>singleton  </b> @singleton.appState
+    <b>scope  </b> @scope.appState
+</div>
